@@ -57,14 +57,6 @@
 	});
 })(jQuery);
 
-// MODAL
-const myModal = document.getElementById('myModal');
-const myInput = document.getElementById('myInput');
-
-myModal.addEventListener('shown.bs.modal', () => {
-	myInput.focus();
-});
-
 // ERROR HANDLING 404
 document.addEventListener('DOMContentLoaded', function () {
 	// Check if the requested page exists
