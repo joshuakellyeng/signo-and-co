@@ -58,10 +58,45 @@
 })(jQuery);
 
 // ERROR HANDLING 404
-document.addEventListener('DOMContentLoaded', function () {
-	// Check if the requested page exists
-	if (document.body.innerHTML.includes('Page Not Found')) {
-		// Redirect the user to the custom 404 page
-		window.location.href = '404.html';
-	}
-});
+// document.addEventListener('DOMContentLoaded', function () {
+// 	// Check if the requested page exists
+// 	if (document.body.innerHTML.includes('Page Not Found')) {
+// 		// Redirect the user to the custom 404 page
+// 		window.location.href = '404.html';
+// 	}
+// });
+
+// // Cookie Button
+
+// const cookiesBtn = document.querySelector('#cookies-btn');
+// const cookiesSection = document.querySelector('#cookies');
+
+// const setCookie = (cName, cValue, expDays) => {
+// 	let date = new Date();
+// 	date.setTime(date.getTime() + expDays * 24 * 60 * 60 * 1000);
+// 	const expires = 'expires=' + date.toUTCString();
+// 	document.cookie = cName + '=' + cValue + '; ' + expires + '; path=/';
+// };
+
+// const getCookie = (cName) => {
+// 	const name = cName + '=';
+// 	const cDecoded = decodeURIComponent(document.cookie);
+// 	const cArr = cDecoded.split('; ');
+// 	let value;
+// 	cArr.forEach((val) => {
+// 		if (val.indexOf(name) === 0) value = val.substring(name.length);
+// 	});
+
+// 	return value;
+// };
+
+// cookiesBtn.addEventListener('click', () => {
+// 	cookiesSection.style.display = 'none';
+// 	setCookie('consentCookie', true, 30);
+// });
+
+// const cookieMessage = () => {
+// 	if (!getCookie('consentCookie')) cookiesSection.style.display = 'block';
+// };
+
+// window.addEventListener('load', cookieMessage);
